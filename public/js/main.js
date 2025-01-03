@@ -36,6 +36,8 @@ function displayNews(news) {
         `;
         container.appendChild(card);
     });
+    // Ajouter l'animation après un délai
+    setTimeout(() => card.classList.add('show'), index * 100);
 }
 
 // TODO: Question 2 - Créer une fonction pour gérer les erreurs
