@@ -6,5 +6,9 @@ const newsController = require('../controllers/newsController');
 router.get('/', newsController.getAllNews);
 router.get('/:id', newsController.getNewsById);
 router.post('/', newsController.createNews);
+// (Optionnel) Modifier un article existant
+router.put('/:id', newsController.updateNews);
 
+// (Optionnel) Supprimer un article
+router.delete('/:id', newsController.deleteNews);
 module.exports = router;
